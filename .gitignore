@@ -1,0 +1,14 @@
+# Ignore Python virtual environment
+ocr-translation-backend/venv/
+ocr-translation-backend/ocr_app/gt.json
+# Ignore Node.js dependencies
+ocr-translation-frontend/node_modules/
+
+# Other common ignores
+__pycache__/
+db.sqlite3
+.env
+*.log
+.DS_Store
+.vscode/
+.idea/

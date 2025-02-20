@@ -1,0 +1,76 @@
+/* OCR Results Page Container */
+.ocr-results-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    height: 100vh;
+    background-color: #fafafa;
+    text-align: center;
+  }
+  
+  /* Results Section */
+  .results-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem 0;
+    padding: 1rem;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Individual Result */
+  .result h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .result p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Action Buttons */
+  .actions {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .upload-again-button,
+  .download-button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .upload-again-button {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .upload-again-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .download-button {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .download-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+  

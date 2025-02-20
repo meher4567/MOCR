@@ -1,0 +1,56 @@
+/* Upload page container */
+.upload-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    height: 100vh;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  /* Form styles */
+  .upload-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* File input */
+  .file-input {
+    border: 1px solid #ccc;
+    padding: 0.8rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  /* Error message */
+  .error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: -1rem;
+  }
+  
+  /* Submit button */
+  .submit-button {
+    background-color: #28a745;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+  

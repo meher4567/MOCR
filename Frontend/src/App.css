@@ -1,0 +1,84 @@
+/* Reset some browser defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure body takes full height */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif; /* Default font */
+  background-color: #f9f9f9; /* Light background for consistent appearance */
+  display: flex; /* Use flex layout for the root */
+  flex-direction: column; /* Stack content vertically */
+}
+
+/* Ensure App wrapper takes full height */
+body > div {
+  flex: 1; /* Allow main content to grow and fill available space */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure it fills the viewport */
+}
+
+/* Main content container */
+main {
+  flex: 1; /* Push footer to the bottom */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 100%; /* Ensure it fills the parent's height */
+}
+
+/* Navbar styles */
+.navbar {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.navbar li {
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.navbar li:hover {
+  color: #00bcd4;
+}
+
+/* Page-specific content styling */
+.page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Footer (if you add one) */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
